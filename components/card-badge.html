@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: whitesmoke;
+        }
+
+        header h1 {
+            background-color: #632323;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        #top {
+            padding: 1rem;
+            background-color: #632323;
+            color: whitesmoke;
+        }
+
+        .card {
+            position: relative;
+            width: 360px;
+            margin: 30px 0;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #632323;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .card .badge {
+            position: absolute;
+            background-color: rgba(210, 105, 30, 0.726);
+            border-radius: 10px;
+            padding: 5px;
+            color: white;
+            right: 0;
+            margin: 10px;
+        }
+
+        .card h3 {
+            padding: 0.5rem 1rem;
+        }
+
+        .card p {
+            padding: 0 1rem 1rem;
+        }
+
+        .back-to-top {
+            position: fixed;
+            z-index: 1;
+            padding: 10px;
+            background-color: crimson;
+            right: 20px;
+            bottom: 20px;
+            text-decoration: none;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .back-to-bottom {
+            position: fixed;
+            z-index: 1;
+            padding: 10px;
+            background-color: crimson;
+            right: 20px;
+            top: 20px;
+            text-decoration: none;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .back-to-top:hover {
+            background-color: rgb(255, 25, 71);
+        }
+
+        main p {
+            width: 360px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <header id="top">
+        <h1>Proyek Saya</h1>
+    </header>
+
+    <a href="#bottom" class="back-to-bottom">&DownArrow; Ke bawah</a>
+
+    <main>
+        <div class="card">
+            <img src="../assets/images/Screenshot 2026-10-25 181104.png" alt="Foto Halaman Proyek Website">
+            <span class="badge">BARU</span>
+            <h3>Website fandom Evangelion</h3>
+            <p>Proyek baru saya ini berupa hasil perbaikan dari proyek sebelumnya, dengan penambahan JavaScript dan lain-lainnya, serta perbaikan.</p>
+        </div>
+
+        <p>Paragraf pengisi 1. Bagian ini senagaja dibuat panjang agar halaman bisa digulir dan tombol "Ke Atas" terlihat tetap berada di pojok layar. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Paragraf pengisi 2. Bagian ini senagaja dibuat panjang agar halaman bisa digulir dan tombol "Ke Atas" terlihat tetap berada di pojok layar. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Paragraf pengisi 3. Bagian ini senagaja dibuat panjang agar halaman bisa digulir dan tombol "Ke Atas" terlihat tetap berada di pojok layar. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Paragraf pengisi 4. Bagian ini senagaja dibuat panjang agar halaman bisa digulir dan tombol "Ke Atas" terlihat tetap berada di pojok layar. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Paragraf pengisi 5. Bagian ini senagaja dibuat panjang agar halaman bisa digulir dan tombol "Ke Atas" terlihat tetap berada di pojok layar. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Paragraf pengisi 6. Bagian ini senagaja dibuat panjang agar halaman bisa digulir dan tombol "Ke Atas" terlihat tetap berada di pojok layar. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <footer id="bottom">
+            <a href="../index.html">Kembali ke Beranda</a>
+        </footer>
+    </main>
+
+    <a href="#top" class="back-to-top">&UpArrow; Ke atas</a>
+</body>
+</html>
