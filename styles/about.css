@@ -1,0 +1,74 @@
+/* font */
+@font-face {
+    font-family: "Open Sans";
+    src: url(../assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../assets/fonts/Poppins-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+main {
+    height: 70vh;
+}
+
+/* latar */
+#about {
+    background-image: url(../assets/images/beachscene.jpg);
+    padding: 5rem;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-box {
+    width: 620px;
+    background-color: rgba(245, 245, 245, 0.783);
+    padding: 5rem;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+/* teks */
+.about-box h2 {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    color: maroon;
+}
+
+.about-box p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.about-box .closing {
+    display: flex;
+    justify-content: end;
+    font-style: italic;
+    color: #9F2323;
+}
+
+.about-box h2, p {
+    margin-bottom: 1rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
