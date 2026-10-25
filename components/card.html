@@ -1,0 +1,69 @@
+<!-- border 2*2 = 4px, padding 20*2 + 40px, dalam kartu = 276px, hasilnya 320px (dengan border-box). Kalau tanpa border-box dalam kartu = 320px jadi 364px-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .card {
+            width: 320px;
+            padding: 20px;
+            border: 2px solid #820909;
+            margin: 30px 0;
+            border-radius: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            display: block;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            color: #820909;
+            margin-bottom: 8px;
+        }
+
+        .card p .card a {
+            font-size: 15px;
+        }
+
+        .card a {
+            color: rgb(252, 30, 74);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="card">
+            <img src="../assets/images/Screenshot 2026-10-25 181104.png" alt="Foto Halaman Proyek Website">
+            <h3>Evangelion</h3>
+            <p>Proyek berisi tentang anime evangelion. Dibuat murni menggunakan HTML dan CSS.</p>
+            <a href="">Lihat Proyek</a>
+        </div>
+
+        <footer>
+            <a href="../index.html">Kembali ke Beranda</a>
+        </footer>
+    </main>
+</body>
+</html>
