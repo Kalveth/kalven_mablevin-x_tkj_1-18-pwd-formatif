@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Set</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h2 {
+            color: #632323;
+            font-size: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .button-group .btn {
+            margin: 0 10px 10px 0;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: rgba(142, 34, 34, 0.717);
+        }
+        .btn-secondary {
+            background-color: orange;
+        }
+        .btn-outline {
+            background-color: #ffffff;
+            border: 2px solid #8A1817;
+        }
+        .btn-send {
+            background-color: rgb(70, 56, 56);
+        }
+
+        .btn-primary, .btn-send {
+            color: white;
+        }
+        .btn-secondary, .btn-outline {
+            color: #632323;
+        }
+
+        .btn-primary:hover {
+            background-color: rgba(255, 0, 0, 0.717);
+        }
+        .btn-secondary:hover {
+            background-color: coral;
+        }
+        .btn-outline:hover {
+            background-color: #dbdbdb;
+        }
+        .btn-send:hover {
+            background-color: rgb(85, 70, 70);
+        }
+
+        footer {
+            margin-top: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h2>Tombol Pilihan</h2>
+
+        <div class="button-group">
+            <a href="" class="btn btn-primary">Lihat Proyek</a>
+            <a href="" class="btn btn-secondary">Unduh CV</a>
+            <a href="" class="btn btn-outline">Hubungi Saya</a>
+            <a href="" class="btn btn-send">Kirim Pesan</a>
+        </div>
+
+        <footer>
+            <a href="../index.html">Kembali ke Beranda</a>
+        </footer>
+    </main>
+</body>
+</html>
