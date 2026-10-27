@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+#main-header {
+    background-color: #820909;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logo {
+    color: whitesmoke;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu>li {
+    list-style: none;
+}
+
+.nav-menu a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.nav-menu a:hover {
+    color: wheat;
+}
+
+main {
+    padding: 2rem;
+}
+
+main h1 {
+    color: #820909;
+}
+
+footer {
+    text-align: center;
+}
