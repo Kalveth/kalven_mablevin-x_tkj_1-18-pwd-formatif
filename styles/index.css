@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes animation {
+    0% {
+        transform: translateY(80px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    cursor: default;
+}
+
+header {
+    text-align: center;
+    background-color: #820909;
+    color: whitesmoke;
+    padding: 1rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "components . pages";
+    gap: 3rem;
+    padding: 2rem 4rem;
+    background-image: url(../assets/images/GenshinImpact_HuTao_Rap_performance_LanternRite2023.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+#components, #pages {
+    background-color: rgba(192, 28, 28, 0.5);
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    animation: animation 0.7s ease 0s 1 normal backwards;
+}
+
+#components {
+    grid-area: components;
+}
+
+#pages {
+    grid-area: pages;
+}
+
+#components h2, #pages h2 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#components ul, #pages ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+
+main a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    background-color: #632323;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    border: 1px solid white;
+    display: block;
+}
+
+main a:hover {
+    background-color: #391414;
+    transform: scale(1.10);
+}
+
+footer {
+    font-size: 14px;
+    text-align: center;
+    background-color: #820909;
+    padding: 1rem;
+    color: white;
+}
