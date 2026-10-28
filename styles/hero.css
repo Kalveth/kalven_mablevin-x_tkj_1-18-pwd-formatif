@@ -1,0 +1,79 @@
+@keyframes slide-up {
+    0% {
+        transform: translateY(60px);
+        opacity: 0;
+    }
+    25% {
+        transform: translateY(40px);
+        opacity: 0.25;
+    }
+    50% {
+        transform: translateY(20px);
+        opacity: 0.5;
+    }
+    75% {
+        transform: translateY(8px);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#hero {
+    height: 400px;
+    background-image: url(../assets/images/beachscene.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    width: 640px;
+    background-color: rgba(255, 254, 254, 0.689);
+    border-radius: 8px;
+    text-align: center;
+    padding: 3rem;
+    color: #820909;
+}
+
+.hero-content h1, .hero-content p {
+    animation-name: slide-up;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.3s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: backwards;
+}
+
+.hero-content p {
+    animation-delay: 0.6s;
+}
+
+.hero-content a {
+    color: white;
+    background-color: #820909;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block;
+    
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Animasi dibuat dengan @keyframes, yaitu daftar tahap dari awal sampai akhir (ditulis dengan persen, 0% sampai 100%). Kata kunci yang perlu kamu cari: animation-name (nama), animation-duration (lama), animation-timing-function (kecepatan), animation-delay (jeda mulai), animation-iteration-count (jumlah ulang), animation-direction (arah), animation-fill-mode (keadaan sebelum dan sesudah animasi), serta transform dan opacity. */
